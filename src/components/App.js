@@ -16,17 +16,17 @@ const App = () => {
   }
   
   const markCommentSeen = (id) => {
-    const newComments = comments.map((comments) => {
-      if (comments.id === id) {
+    const newComments = comments.map((comment) => {
+      if (comment.id === id) {
         const updatedComment = {
-          ...comments,
-          acknowledged: !comments.acknowledged,
+          ...comment,
+          acknowledged: !comment.acknowledged,
         };
  
         return updatedComment;
       }
 
-      return comments;
+      return comment;
     });
  
     setComments(newComments);
