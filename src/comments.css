@@ -1,0 +1,201 @@
+.page {
+  width: calc(100% - 15px);
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  border: 1px solid #d8d9d9;
+  padding: 5px;
+  display: flex;
+
+}
+
+.button-holder {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.acknowledge-count-badge {
+  z-index: 11;
+  display: block;
+  top: 5px;
+  right: 12px;
+  position: absolute;
+  font-family: raleway;
+  text-align: center;
+  line-height: 0.8;
+  font-size: 11px;
+  color: white;
+  background-color: red;
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid white;
+  padding: 5px;
+  transition-property: ;
+  transition-delay: 300ms;
+}
+
+.comment-button-clicked-false {
+  border: 1px solid #d8d9d9;
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.comment-button-clicked-true {
+  border: 1px solid #d8d9d9;
+  background-color: #02b7e2;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.comment-button-clicked-false:hover {
+  background-color: #02b7e2;
+  color: white;
+  cursor: pointer;
+}
+
+.comment-button-clicked-true:focus {
+  outline: none;
+}
+
+.comment-button-clicked-false:focus {
+  outline: none;
+}
+
+.comment-list-show-true {
+  font-family: raleway;
+  width: 350px;
+  padding: 10px;
+  max-height: 350px;
+  overflow: auto;
+  border: 1px solid #d8d9d9;
+  border-radius: 5px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-list-show-false {
+  display: none;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  border-bottom: 1px dashed #d8d9d9;
+}
+
+.comment-content {
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.comment-username {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.time-and-seen-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-timestamp {
+  font-weight: 300;
+  color: #8c8c8e;
+  margin-top: 3px;
+  padding-right: 5px;
+}
+
+.seen-button {
+  background: white;
+  font-weight: normal;
+  border: none;
+  color: #e78d2d;
+  cursor: pointer;
+  border-left: 1px solid #d8d9d9;
+}
+
+.seen-button:focus {
+  background: white;
+  outline: none;
+  text-decoration: underline;
+}
+
+.seen-button:hover {
+  background: white;
+  text-decoration: underline;
+}
+
+.comment-user-photo {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+  .approval-button {
+    background-color: white;
+    margin-top: 12px;
+    color: #43ac6a;;
+    border: 1px solid #43ac6a;
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+
+  .approval-button:hover {
+    background-color: #43ac6a;
+    color: white;
+    border: 1px solid #43ac6a;
+  }
+
+  .approval-button:focus {
+    outline: none;
+  }
