@@ -6,8 +6,8 @@ import '../comments.css'
 const CommentList = ({ show, comments, markCommentSeen }) => {
   const commentListShow = show
 
-const renderedList = comments.map (comments => {
-  return <Comment comments={comments} key={comments.id} markCommentSeen={markCommentSeen}/>
+const renderedList = comments.map (comment => {
+  return <Comment comment={comment} key={comment.id} markCommentSeen={markCommentSeen}/>
 });
 
   return (

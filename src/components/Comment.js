@@ -2,8 +2,14 @@ import React from 'react';
 import '../comments.css'
 import TimeAgo from 'react-timeago'
 
-const Comment = ({ comments, markCommentSeen }) => {
-  const { body, id, acknowledged, dates:{created: {date_time}},user:{ full_name, image: { thumb_url }}} = comments
+const Comment = ({ comment, markCommentSeen }) => {
+  const { 
+    body, 
+    id, 
+    acknowledged, 
+    dates: { created: { date_time } },
+    user: { full_name, image: { thumb_url } },
+  } = comment
 
 
   return (
