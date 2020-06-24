@@ -32,10 +32,6 @@ const App = () => {
     setComments(newComments);
   }
 
-  useEffect(() => {
-
-  }, []);
-
   const seen = comments.filter(({ acknowledged }) => !acknowledged);
   const seenCount = seen.length;
 
